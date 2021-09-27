@@ -38,9 +38,9 @@ pipeline{
            steps {
                script {
                     if(isUnix()){
-                        sh "docker run -d --name app-java -p 8081:8080 jsalinas/app-java"
+                        sh "docker run -d --name app-java -p 18080:8080 jsalinas/app-java"
                     }else{
-                        bat "docker run -d --name app-java -p 8081:8080 jsalinas/app-java"
+                        bat "docker run -d --name app-java -p 18080:8080 jsalinas/app-java"
                     }
                }
            }
